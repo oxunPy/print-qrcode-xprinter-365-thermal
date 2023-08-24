@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 8.1.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="test" pageWidth="113" pageHeight="90" columnWidth="113" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="94998f32-3f36-4d72-a3bc-171cd364ab28">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="imgInputStream" class="java.io.InputStream"/>
+	<parameter name="sn" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="imgInputStream" class="java.io.InputStream"/>
+	<field name="sn" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="90" splitType="Stretch">
+			<image>
+				<reportElement x="19" y="2" width="75" height="75" uuid="c069187a-1f04-4e5f-9afa-46480e9cb0ef">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$F{imgInputStream}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="10" y="75" width="93" height="13" uuid="cf2f8c4f-7e5b-4f55-b837-8ae516707762"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{sn}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
