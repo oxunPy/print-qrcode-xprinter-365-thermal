@@ -29,3 +29,8 @@ bin/
 .DS_Store
 # Project exclude paths
 /target/
+
+./printer layout/
+./libs/
+./.idea/
+./target/
